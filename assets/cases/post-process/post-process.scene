@@ -32,7 +32,7 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 119
+      "__id__": 120
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -63,7 +63,7 @@
     },
     "autoReleaseAssets": false,
     "_globals": {
-      "__id__": 120
+      "__id__": 121
     },
     "_id": "5d722be7-00a3-4597-b829-22703640b7d3"
   },
@@ -263,7 +263,7 @@
       "__id__": 1
     },
     "_children": [],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 8
@@ -327,7 +327,9 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "global": true,
     "_shadingScale": 1,
+    "enableShadingScaleInEditor": false,
     "_id": "c9NapT/XRI/7igytdVg1yE"
   },
   {
@@ -340,6 +342,8 @@
     },
     "_enabled": true,
     "__prefab": null,
+    "_enableAlphaMask": false,
+    "_useHdrIlluminance": false,
     "_threshold": 0.7927929146287351,
     "_iterations": 3,
     "_intensity": 2.3,
@@ -630,6 +634,9 @@
       },
       {
         "__id__": 117
+      },
+      {
+        "__id__": 119
       }
     ],
     "removedComponents": []
@@ -1464,6 +1471,16 @@
     ]
   },
   {
+    "__type__": "CCPropertyOverrideInfo",
+    "targetInfo": {
+      "__id__": 20
+    },
+    "propertyPath": [
+      "_active"
+    ],
+    "value": false
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": null,
     "asset": null,
@@ -1479,25 +1496,28 @@
   {
     "__type__": "cc.SceneGlobals",
     "ambient": {
-      "__id__": 121
-    },
-    "shadows": {
       "__id__": 122
     },
-    "_skybox": {
+    "shadows": {
       "__id__": 123
     },
-    "fog": {
+    "_skybox": {
       "__id__": 124
     },
-    "octree": {
+    "fog": {
       "__id__": 125
     },
-    "skin": {
+    "octree": {
       "__id__": 126
     },
-    "lightProbeInfo": {
+    "skin": {
       "__id__": 127
+    },
+    "lightProbeInfo": {
+      "__id__": 128
+    },
+    "postSettings": {
+      "__id__": 129
     },
     "bakedWithStationaryMainLight": false,
     "bakedWithHighpLightmap": false
@@ -1561,6 +1581,7 @@
       "z": 0
     },
     "_distance": 0,
+    "_planeBias": 1,
     "_shadowColor": {
       "__type__": "cc.Color",
       "r": 76,
@@ -1652,5 +1673,9 @@
     "_showConvex": false,
     "_data": null,
     "_lightProbeSphereVolume": 1
+  },
+  {
+    "__type__": "cc.PostSettingsInfo",
+    "_toneMappingType": 0
   }
 ]
