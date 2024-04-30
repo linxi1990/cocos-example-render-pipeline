@@ -1,5 +1,5 @@
 {
-  "ver": "2.3.8",
+  "ver": "2.3.13",
   "importer": "gltf",
   "imported": true,
   "uuid": "6c6e8b79-828d-4a90-9d1e-26d92e9db900",
@@ -3855,7 +3855,7 @@
       "userData": {
         "gltfIndex": 0
       },
-      "ver": "1.0.13",
+      "ver": "1.0.14",
       "imported": true,
       "files": [
         ".json"
@@ -4073,7 +4073,6 @@
         "uri": "db://assets/shared-res/models/sponza/textures/material_24_normal.jpeg"
       }
     ],
-    "redirect": "6c6e8b79-828d-4a90-9d1e-26d92e9db900@d1932",
     "assetFinder": {
       "meshes": [
         "6c6e8b79-828d-4a90-9d1e-26d92e9db900@4f4f4",

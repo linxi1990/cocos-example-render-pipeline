@@ -340,7 +340,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "_threshold": 0.6,
+    "_threshold": 0.7927929146287351,
     "_iterations": 3,
     "_intensity": 2.3,
     "_id": "3frZMuv+lLo4WAe7xnbcNP"
@@ -380,7 +380,7 @@
     "_id": "984P4wW4RMu7jUhbXsitf4"
   },
   {
-    "__type__": "cc.Fxaa",
+    "__type__": "cc.FXAA",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},

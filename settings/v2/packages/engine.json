@@ -1,5 +1,5 @@
 {
-  "__version__": "1.0.7",
+  "__version__": "1.0.9",
   "macroConfig": {
     "CUSTOM_PIPELINE_NAME": "Custom",
     "ENABLE_FLOAT_OUTPUT": false
@@ -124,6 +124,9 @@
       },
       "custom-pipeline": {
         "_value": true
+      },
+      "graphics": {
+        "_value": true
       }
     },
     "flags": {},
@@ -140,6 +143,7 @@
       "intersection-2d",
       "light-probe",
       "marionette",
+      "meshopt",
       "particle",
       "particle-2d",
       "physics-2d-box2d",
