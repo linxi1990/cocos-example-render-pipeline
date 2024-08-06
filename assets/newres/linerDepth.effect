@@ -211,6 +211,6 @@ CCProgram unlit-fs %{
     // return o;
     // vec4 color = texture(depthTexture, screenUV);
     // return color;
-    return vec4(0.5, 0., 0., 0.3);
+    return vec4(sceneZ, sceneZ, sceneZ, 1.0);
   }
 }%

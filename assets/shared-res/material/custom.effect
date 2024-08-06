@@ -70,7 +70,7 @@ CCProgram fs %{
     if (params.y == 0.) {
       fragColor = texture(inputTexture, v_uv);
       
-      fragColor.rgb *= vec3(1., 1., params.x);
+      // fragColor.rgb *= vec3(1., 1., params.x);
     }
     else {
       fragColor = texture(depthTexture, v_uv);

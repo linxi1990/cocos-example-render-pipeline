@@ -11,6 +11,7 @@
   "_techIdx": 0,
   "_defines": [
     {
+      "HAS_SECOND_UV": true,
       "USE_ALBEDO_MAP": true
     },
     {},
@@ -81,13 +82,19 @@
     {
       "mainColor": {
         "__type__": "cc.Color",
-        "r": 199,
-        "g": 231,
-        "b": 243,
+        "r": 22,
+        "g": 253,
+        "b": 12,
         "a": 255
       },
-      "roughness": 0.8,
-      "metallic": 0.6
+      "metallic": 0.6,
+      "emissive": {
+        "__type__": "cc.Color",
+        "r": 63,
+        "g": 59,
+        "b": 59,
+        "a": 255
+      }
     },
     {},
     {},

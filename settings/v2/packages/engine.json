@@ -1,7 +1,7 @@
 {
-  "__version__": "1.0.9",
+  "__version__": "1.0.10",
   "macroConfig": {
-    "CUSTOM_PIPELINE_NAME": "",
+    "CUSTOM_PIPELINE_NAME": "custom",
     "ENABLE_FLOAT_OUTPUT": false
   },
   "modules": {
@@ -13,6 +13,9 @@
         "_value": true
       },
       "gfx-webgl2": {
+        "_value": true
+      },
+      "gfx-webgpu": {
         "_value": true
       },
       "animation": {
@@ -126,6 +129,12 @@
         "_value": false
       },
       "custom-pipeline": {
+        "_value": true
+      },
+      "custom-pipeline-post-process": {
+        "_value": true
+      },
+      "legacy-pipeline": {
         "_value": false
       },
       "graphcis": {
@@ -142,9 +151,12 @@
       "animation",
       "audio",
       "base",
+      "custom-pipeline",
+      "custom-pipeline-post-process",
       "dragon-bones",
       "gfx-webgl",
       "gfx-webgl2",
+      "gfx-webgpu",
       "intersection-2d",
       "light-probe",
       "marionette",
@@ -169,5 +181,8 @@
       "value": false,
       "version": ""
     }
+  },
+  "graphics": {
+    "customPipeline": true
   }
 }

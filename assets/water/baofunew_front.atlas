@@ -1,0 +1,69 @@
+
+baofunew_front.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4/暴富/Bottom frame
+  rotate: false
+  xy: 2, 103
+  size: 429, 125
+  orig: 429, 125
+  offset: 0, 0
+  index: -1
+4/暴富/Riband
+  rotate: false
+  xy: 2, 230
+  size: 579, 197
+  orig: 579, 197
+  offset: 0, 0
+  index: -1
+4/暴富/img_huangguan
+  rotate: false
+  xy: 2, 2
+  size: 111, 99
+  orig: 111, 99
+  offset: 0, 0
+  index: -1
+4/暴富/img_star2
+  rotate: false
+  xy: 583, 275
+  size: 66, 57
+  orig: 66, 57
+  offset: 0, 0
+  index: -1
+4/暴富/img_star3
+  rotate: false
+  xy: 433, 146
+  size: 95, 82
+  orig: 95, 82
+  offset: 0, 0
+  index: -1
+4/暴富/img_star4
+  rotate: false
+  xy: 929, 392
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+4/暴富/title_baofu
+  rotate: false
+  xy: 583, 334
+  size: 344, 93
+  orig: 344, 93
+  offset: 0, 0
+  index: -1
+4/暴富/title_facaila
+  rotate: false
+  xy: 583, 334
+  size: 344, 93
+  orig: 344, 93
+  offset: 0, 0
+  index: -1
+4/暴富/title_fadacaila
+  rotate: false
+  xy: 583, 334
+  size: 344, 93
+  orig: 344, 93
+  offset: 0, 0
+  index: -1

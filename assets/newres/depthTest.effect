@@ -81,6 +81,7 @@ CCProgram unlit-vs %{
       CC_HANDLE_RT_SAMPLE_FLIP(v_uv);
     #endif
 
+    // position.x += 8.0;
     v_position = (matWorld * position).xyz;
     v_worldNormal = normalize((matworldIT * vec4(a_normal, 0.0)).xyz);
     v_normal = normalize((matworldIT * vec4(a_normal, 0.0)).xyz);
@@ -116,7 +117,8 @@ CCProgram unlit-fs %{
     // mat4 matWorld, matworldIT;
     // CCGetWorldMatrixFull(matWorld, matworldIT);
     // vec4 col = mainColor * texture(mainTexture, v_uv);
-    vec4 col = vec4(0, 1, 1, 0);
+    vec4 col = vec4(1.0, 1.0, 1.0, 1.0);
+    vec4 colRim = vec4(1.0, 0.0, 0.0, 0.0);
 
     vec3 viewDir = normalize(cc_cameraPos.xyz - v_position);
     // vec3 worldNormal = (matworldIT * vec4(v_normal, 0.0)).xyz; 
@@ -124,7 +126,10 @@ CCProgram unlit-fs %{
     fRim = pow(fRim, 5.0);
 
     // CC_APPLY_FOG(col, v_position);
-    col = col * fRim;
+    col = colRim * fRim;
+    // if(fRim > 0.11){
+    //   col = colRim;
+    // }
     return CCFragOutput(col);
     // return col;
   }
@@ -153,8 +158,9 @@ CCProgram pass2fs %{
   };
 
   vec4 frag () {
-    vec4 col = mainColor3 * texture(mainTexture2, v_uv);
-    // vec4 col = vec4(1, 0, 0, 1);
+    // vec4 col = mainColor3 * texture(mainTexture2, v_uv);
+    vec4 col = mainColor3;
+    col = vec4(1.0, 1.0, 0.0, 1.0);
     CC_APPLY_FOG(col, v_position);
     return CCFragOutput(col);
   }
