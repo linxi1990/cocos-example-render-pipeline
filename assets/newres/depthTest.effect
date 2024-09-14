@@ -118,7 +118,7 @@ CCProgram unlit-fs %{
     // CCGetWorldMatrixFull(matWorld, matworldIT);
     // vec4 col = mainColor * texture(mainTexture, v_uv);
     vec4 col = vec4(1.0, 1.0, 1.0, 1.0);
-    vec4 colRim = vec4(1.0, 0.0, 0.0, 0.0);
+    vec4 colRim = vec4(1.0, 1.0, 0.0, 0.0);
 
     vec3 viewDir = normalize(cc_cameraPos.xyz - v_position);
     // vec3 worldNormal = (matworldIT * vec4(v_normal, 0.0)).xyz; 
@@ -143,6 +143,8 @@ CCProgram pass2fs %{
 
   in vec2 v_uv;
   in vec3 v_position;
+  in vec3 v_normal;
+
 
   // uniform sampler2D mainTexture;
 
@@ -159,8 +161,20 @@ CCProgram pass2fs %{
 
   vec4 frag () {
     // vec4 col = mainColor3 * texture(mainTexture2, v_uv);
-    vec4 col = mainColor3;
-    col = vec4(1.0, 1.0, 0.0, 1.0);
+    // vec4 col = mainColor3;
+    // col = vec4(0.0, 0.0, 0.0, 1.0);
+
+    vec4 col = vec4(1.0, 1.0, 0.0, 1.0);
+    vec4 colRim = vec4(1.0, 0.0, 1.0, 0.0);
+
+    // vec3 viewDir = normalize(cc_cameraPos.xyz - v_position);
+    // // vec3 worldNormal = (matworldIT * vec4(v_normal, 0.0)).xyz; 
+    // float fRim = 1.0 - abs(dot(normalize(v_normal), viewDir));
+    // fRim = pow(fRim, 2.0);
+
+    // // CC_APPLY_FOG(col, v_position);
+    // col = colRim * fRim;
+
     CC_APPLY_FOG(col, v_position);
     return CCFragOutput(col);
   }

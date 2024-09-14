@@ -34,8 +34,7 @@ export class plannerReflection extends Component {
         reflectMat.m14 = -2 * d * normal.z;
         reflectMat.m15 = 1;
 
-        this.rCamera.camera.matView.multiply(reflectMat);l
-
+        this.rCamera.camera.matView.multiply(reflectMat);
         return reflectMat;
     }
 }

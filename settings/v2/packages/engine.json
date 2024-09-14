@@ -128,20 +128,17 @@
       "procedural-animation": {
         "_value": false
       },
-      "custom-pipeline": {
-        "_value": true
-      },
       "custom-pipeline-post-process": {
         "_value": true
       },
       "legacy-pipeline": {
         "_value": false
       },
-      "graphcis": {
-        "_value": true
-      },
       "graphics": {
         "_value": true
+      },
+      "render-pipeline": {
+        "_option": "custom-pipeline"
       }
     },
     "flags": {},
@@ -152,7 +149,6 @@
       "audio",
       "base",
       "custom-pipeline",
-      "custom-pipeline-post-process",
       "dragon-bones",
       "gfx-webgl",
       "gfx-webgl2",
@@ -175,7 +171,8 @@
       "ui",
       "video",
       "websocket",
-      "webview"
+      "webview",
+      "custom-pipeline-post-process"
     ],
     "noDeprecatedFeatures": {
       "value": false,
